@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 // import imageUrlBuilder from "@sanity/image-url";
 // import { sanityClient } from "../sanityClient";
-import GallaryImage from '../Components/GallaryImage';
-const Gallary = ({ posts }) => {
+import Projectcard from "../Components/Projectcard";
+
+const Projects = ({ posts }) => {
     const [mappedPosts, setMappedPosts] = useState([]);
     useEffect(() => {
         if (posts.length) {
@@ -22,20 +23,20 @@ const Gallary = ({ posts }) => {
         }
     }, [posts]);
     return (
-        <div className="container">
-            <h1 className="my-5 fw-bold text-success text-center">Our Gallary</h1>
+        <div className="container my-5">
+            <h1 className="my-5 fw-bold main-color text-center">Our Portfolio</h1>
             <div className="row g-5">
                 {mappedPosts &&
                     mappedPosts.length &&
                     mappedPosts.map((post, index) => (
-                        <GallaryImage data={post} key={index} />
+                        <Projectcard data={post} key={index} />
                     ))}
             </div>
         </div>
     );
 };
 export const getServerSideProps = async (context) => {
-    const query = encodeURIComponent(`*[ _type == "gallary" ]`);
+    const query = encodeURIComponent(`*[ _type == "post" ]`);
     const url = `${process.env.SANITY_URL}query=${query}`;
     const data = await fetch(url).then((res) => res.json());
     const posts = data.result;
@@ -53,4 +54,4 @@ export const getServerSideProps = async (context) => {
         };
     }
 };
-export default Gallary;
+export default Projects;

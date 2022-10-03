@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const contactimg = 'https://img.freepik.com/free-photo/hot-line-contact-us-call-center-search-interface_53876-124009.jpg?w=900&t=st=1661697104~exp=1661697704~hmac=828effcb18db78891300c10d2d303e87bc6b764356bc69050753e6616651610c';
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -24,7 +23,7 @@ const Contact = () => {
                         <div className="row g-0">
                             <div className="col-md-7">
                                 <div className="card-body">
-                                    <p className="fs-3 text-success fw-bold">Stay With Us</p>
+                                    <p className="fs-3 main-color fw-bold">Stay With Us</p>
                                     <div className="mb-3">
                                         <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Enter your name" />
                                     </div>
@@ -35,12 +34,12 @@ const Contact = () => {
                                         <textarea className="form-control" placeholder="Leave a message here" id="floatingTextarea"></textarea>
                                     </div>
                                     <div className="mb-3">
-                                        <input type="submit" className='btn btn-success text-white rounded-pill fw-bold' value="Send" />
+                                        <input type="submit" className='btn main-button text-white rounded-pill fw-bold' value="Send" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-5">
-                                <img src={contactimg} className="img-fluid rounded-start h-100" alt="contact" />
+                            <div className="col-md-5 p-2">
+                                <img src="contact.svg" className="img-fluid rounded-start h-100" alt="contact" />
                             </div>
                         </div>
                     </div>

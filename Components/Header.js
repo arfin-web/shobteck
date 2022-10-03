@@ -19,18 +19,13 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-item m-2">
-                                <Link className="nav-link text-dark" href="/about">
-                                    <button className="btn btn-light fw-bold rounded-pill">About</button>
+                                <Link className="nav-link text-dark" href="/projects">
+                                    <button className="btn btn-light fw-bold rounded-pill">Projects</button>
                                 </Link>
                             </li>
                             <li className="nav-item m-2">
-                                <Link className="nav-link text-dark" href="/gallary">
-                                    <button className="btn btn-light fw-bold rounded-pill">Gallary</button>
-                                </Link>
-                            </li>
-                            <li className="nav-item m-2">
-                                <Link className="nav-link text-dark" href="/teachers">
-                                    <button className="btn btn-light fw-bold rounded-pill">Teachers</button>
+                                <Link className="nav-link text-dark" href="/team">
+                                    <button className="btn btn-light fw-bold rounded-pill">Team</button>
                                 </Link>
                             </li>
                             <li className="nav-item m-2">

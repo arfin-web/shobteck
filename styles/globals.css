@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -46,36 +47,17 @@ a {
 }
 
 .mainbanner {
-  height: 90vh;
+  height: 100vh auto;
   background-image: url("../public/mainbanner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about-container {
-  height: 80vh;
-  background-image: url('https://img.freepik.com/free-vector/empty-classroom-interior-school-college-class_107791-631.jpg?w=1060&t=st=1661697544~exp=1661698144~hmac=b0c7b2874e60fef9260bf3f9b3ff5065f158028f5619aa2c864ea8726e42ba14');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-title {
-  font-size: 65px;
-}
-
 .contact-container {
   height: 80vh;
-  background-image: url('https://img.freepik.com/free-vector/school-classroom-interior-university-educational-concept-blackboard-table_1441-1694.jpg?w=1060&t=st=1662340929~exp=1662341529~hmac=762b8ee31b95e3576e56562d66039e4d5ec558d41b89d1f93d01124fb3cf0a16');
+  background-image: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=1060&t=st=1664698902~exp=1664699502~hmac=656b54c021de06bb9e286cc5f7a4450d1f1c34edb661abda99fc880c098f7455');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.teacher-card {
-  height: 450px !important;
 }

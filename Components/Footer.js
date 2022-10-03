@@ -12,45 +12,49 @@ const Footer = () => {
                 </div>
             </div>
             <Address></Address>
-            <div className="container-fluid bg-white p-5">
-                <div className="row g-5">
-                    <div className="col-lg-3 col-md-6 col-12">
-                        <div className="card bg-white text-white">
-                            <div className="card-header fs-3 main-color fw-bold">
+            <div className='container my-5'>
+                <div className='row'>
+                    <div className='col-md-4'>
+                        <form className="row g-3">
+                            <div className="col-md-12">
+                                <label htmlFor="inputEmail4" className="form-label main-color fw-bold fs-3">Get Newsletter</label>
+                                <input type="email" className="form-control rounded-pill" id="inputEmail4" placeholder='Your Email' />
+                            </div>
+                            <div className="col-12">
+                                <button type="submit" className="btn main-button text-white rounded-pill fw-bold">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div className='col-md-4'>
+                        <div className="card">
+                            <div className="card-header main-color fw-bold fs-4">
                                 Follow Us
                             </div>
                             <ul className="list-group list-group-flush">
-                                <li className="list-group-item fs-5 text-muted p-3 bg-white"><i className="fab fa-facebook-square fs-4 main-color"></i> /mmiofficial</li>
-                                <li className="list-group-item fs-5 text-muted p-3 bg-white"><i className="fab fa-twitter-square fs-4 main-color"></i> /mmiofficial</li>
-                                <li className="list-group-item fs-5 text-muted p-3 bg-white"><i className="fab fa-youtube-square fs-4 main-color"></i> /mmiofficial</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 col-12">
-                        <div className="card bg-white">
-                            <div className="card-header fs-3 main-color fw-bold">
-                                Explore
-                            </div>
-                            <ul className="list-group list-group-flush">
-                                <li className="list-group-item bg-white">
-                                    <Link href="/" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 main-color icon">Home</i></Link>
+                                <li className="list-group-item social-links">
+                                    <i className="fab fa-facebook-square fs-3 main-color"></i>
+                                    <Link className="nav-link active text-dark" aria-current="page" href="/"><span className='fs-5 main-color'> /ShobTech</span></Link>
                                 </li>
-                                <li className="list-group-item bg-white">
-                                    <Link href="/about" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 main-color icon">About</i></Link>
+                                <li className="list-group-item social-links">
+                                    <i className="fab fa-instagram-square fs-3 main-color"></i>
+                                    <Link className="nav-link active text-dark" aria-current="page" href="/"><span className='fs-5 main-color'> /ShobTech</span></Link>
                                 </li>
-                                <li className="list-group-item bg-white">
-                                    <Link href="/contact" className="text-muted text-decoration-none fs-5"><i className="fas fa-hand-point-right fs-4 main-color icon">Contact</i></Link>
+                                <li className="list-group-item social-links">
+                                    <i className="fab fa-youtube-square fs-3 main-color"></i>
+                                    <Link className="nav-link active text-dark" aria-current="page" href="/"><span className='fs-5 main-color'> /ShobTech</span></Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-12">
+                    <div className='col-md-4'>
                         <div className="card">
-                            <img src="logo.png" className="img-fluid" alt="school" />
+                            <img src="logo.png" className="card-img-top img-fluid" alt="footerLogo" />
                         </div>
                     </div>
                 </div>
-                <p className="text-muted text-center mt-5 mb-0 fs-5">&#169; Created By <span className='fw-bold'>Arfin Priom</span> || All Rights Resurved</p>
+            </div>
+            <div className='container-fluid bg-light py-2'>
+                <p className='text-muted text-center fs-5'>&#169; Created By <span className='fw-bold'>Arfin Priom ||</span> All Rights Resurved <span className='fw-bold'>2022.</span></p>
             </div>
         </>
     );
