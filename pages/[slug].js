@@ -5,6 +5,7 @@ import { useNextSanityImage } from "next-sanity-image";
 import Link from "next/link";
 import Image from "next/image";
 import { sanityClient } from "../sanityClient";
+
 const TeacherDetails = (props) => {
     const { title, body, image } = props;
     // const [imageUrl, setImageUrl] = useState("");
