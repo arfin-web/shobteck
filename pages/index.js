@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Shop Tech</title>
-        <meta name="description" content="Shop Tech. Address: Sector 10, Uttara, Dhaka, Bangladesh" />
-        <meta name="keywords" content="Shop Tech" />
-        <meta name="author" content="Shop Tech" />
+        <title>Shob Tech</title>
+        <meta name="description" content="Shob Tech. Address: Sector 10, Uttara, Dhaka, Bangladesh" />
+        <meta name="keywords" content="Shob Tech" />
+        <meta name="author" content="Shob Tech" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Shop Tech" />
+        <meta property="og:title" content="Shob Tech" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Main />
